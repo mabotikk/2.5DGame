@@ -10,10 +10,10 @@ void Enemy::Init()
 	m_poly.SetUVRect(0);
 	m_poly.SetScale(0.5);
 
-	m_parameter.Hp = 500;
-	m_parameter.Atk = 50;
-	m_parameter.Def = 50;
-	m_parameter.Spe = 100;
+	Hp = 500;
+	Atk = 50;
+	Def = 50;
+	Spe = 100;
 }
 
 void Enemy::Update()

@@ -21,10 +21,10 @@ void Player::Init()
 	m_bAnime = 0;
 	m_keyFlgK = 0;
 
-	m_parameter.Hp = 500;
-	m_parameter.Atk = 50;
-	m_parameter.Def = 50;
-	m_parameter.Spe = 50;
+	Hp = 500;
+	Atk = 50;
+	Def = 50;
+	Spe = 5;
 }
 
 void Player::Update()

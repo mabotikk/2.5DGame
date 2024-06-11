@@ -6,6 +6,7 @@
 #include"../../Object/UI/Command/abilityCommand/abilityCommand.h"
 #include"../../Object/UI/Cursor/BattleCursor/BattleCursor.h"
 #include"../../Object/UI/Cursor/AbilityCursor/AbilityCursor.h"
+#include"../../Object/UI/CharaUI/CharaUi.h"
 
 void GameScene::Event()
 {
@@ -69,12 +70,16 @@ void GameScene::Init()
 	player->SetOwner(this);
 	m_objList.push_back(player);
 
-
 	//エネミー
 	std::shared_ptr<Enemy>enemy;
 	enemy = std::make_shared<Enemy>();
 	enemy->Init();
 	m_objList.push_back(enemy);
 
-	
+	//Name
+	std::shared_ptr<CharaUi>charaui;
+	charaui = std::make_shared<CharaUi>();
+	charaui->Init();
+	m_objList.push_back(charaui);
+
 }

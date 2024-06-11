@@ -121,6 +121,15 @@
     <Filter Include="Src\Application\Object\Back">
       <UniqueIdentifier>{ada3d612-1786-445c-be90-a3489dfb9815}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Src\Application\Object\UI\ATBGauge">
+      <UniqueIdentifier>{3ccf754f-c9ad-4b9f-bbc6-97b780b26e71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Object\UI\ATBGauge\ATBPlayer">
+      <UniqueIdentifier>{03ea2702-e7eb-423c-bde0-1a589f72942a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Object\UI\CharaUi">
+      <UniqueIdentifier>{6b2ecc74-e91b-4cca-8702-4b448d51b693}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Pch.h">
@@ -324,6 +333,12 @@
     <ClInclude Include="Src\Application\Object\Back\Back.h">
       <Filter>Src\Application\Object\Back</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Application\Object\UI\ATBGauge\ATBPlayer\ATBPlayer.h">
+      <Filter>Src\Application\Object\UI\ATBGauge\ATBPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Object\UI\CharaUI\CharaUi.h">
+      <Filter>Src\Application\Object\UI\CharaUi</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Pch.cpp">
@@ -502,6 +517,12 @@
     </ClCompile>
     <ClCompile Include="Src\Application\Object\Back\Back.cpp">
       <Filter>Src\Application\Object\Back</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Object\UI\ATBGauge\ATBPlayer\ATBPlayer.cpp">
+      <Filter>Src\Application\Object\UI\ATBGauge\ATBPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Object\UI\CharaUI\CharaUi.cpp">
+      <Filter>Src\Application\Object\UI\CharaUi</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

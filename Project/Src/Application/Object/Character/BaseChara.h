@@ -1,13 +1,13 @@
 ﻿#pragma once
 class GameScene;
-
-struct parameter
-{
-	int Hp;		//HP
-	int Atk;	//攻撃力
-	int Def;	//防御
-	int Spe;	//素早さ
-};
+//
+//struct parameter
+//{
+//	int Hp;		//HP
+//	int Atk;	//攻撃力
+//	int Def;	//防御
+//	int Spe;	//素早さ
+//};
 
 class BaseChara :public KdGameObject
 {
@@ -20,7 +20,11 @@ public:
 	void Update()	override;
 	void GenerateDepthMapFromLight() override;
 	void SetOwner(GameScene* a_owner) { m_owner = a_owner; }
-	
+	int GetHp() { return Hp; }
+	int GetAtk() { return Atk; }
+	int GetDef() { return Def; }
+	int GetSpe() { return Spe; }
+
 private:
 	void Release();
 
@@ -33,5 +37,10 @@ protected:
 	Math::Matrix	m_tMat;
 	Math::Vector3	m_pos;
 	
-	parameter m_parameter;
+	int Hp;		//HP
+	int Atk;	//攻撃力
+	int Def;	//防御
+	int Spe;	//素早さ
+
+	//parameter m_parameter;
 };
