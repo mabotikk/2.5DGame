@@ -7,6 +7,7 @@
 #include"../../Object/UI/Cursor/BattleCursor/BattleCursor.h"
 #include"../../Object/UI/Cursor/AbilityCursor/AbilityCursor.h"
 #include"../../Object/UI/CharaUI/CharaUi.h"
+#include"../../Object/UI/ATBGauge/ATBPlayer/ATBPlayer.h"
 
 void GameScene::Event()
 {
@@ -81,5 +82,9 @@ void GameScene::Init()
 	charaui = std::make_shared<CharaUi>();
 	charaui->Init();
 	m_objList.push_back(charaui);
-
+	//playerATB
+	std::shared_ptr<ATBPlayer>atbPlayer;
+	atbPlayer = std::make_shared<ATBPlayer>();
+	atbPlayer->Init();
+	m_objList.push_back(atbPlayer);
 }

@@ -3,12 +3,13 @@
 void ATBPlayer::Init()
 {
 	UiBase::Init();
-	m_tex.Load("Asset/Textures/UI/Ability1.png");
+	m_tex.Load("Asset/Textures/UI/waku.png");
 
-	m_rectAngle = { 0,0,128,128 };
-	m_tMat = Math::Matrix::CreateTranslation(150, -80, 0);
-	texHeight = 128;
-	texWide = 128;
+	m_rectAngle = { 0,0,75,10 };
+	m_tMat = Math::Matrix::CreateTranslation(550, 140, 0);
+	m_sMat = Math::Matrix::CreateScale(2);
+	texHeight = 10;
+	texWide = 80;
 	m_bShow = true;
 }
 
