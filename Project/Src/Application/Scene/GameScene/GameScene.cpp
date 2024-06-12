@@ -8,6 +8,7 @@
 #include"../../Object/UI/Cursor/AbilityCursor/AbilityCursor.h"
 #include"../../Object/UI/CharaUI/CharaUi.h"
 #include"../../Object/UI/ATBGauge/ATBPlayer/ATBPlayer.h"
+#include"../../BattleSystem/BattleSystem.h"
 
 void GameScene::Event()
 {
@@ -77,11 +78,20 @@ void GameScene::Init()
 	enemy->Init();
 	m_objList.push_back(enemy);
 
+	//バトルシステム
+	std::shared_ptr<BattleSystem>battleSystem;
+	battleSystem = std::make_shared<BattleSystem>();
+	battleSystem->Init();
+	battleSystem->SetEnemy(enemy);
+	battleSystem->SetPlayer(player);
+	m_objList.push_back(battleSystem);
+
 	//Name
 	std::shared_ptr<CharaUi>charaui;
 	charaui = std::make_shared<CharaUi>();
 	charaui->Init();
 	m_objList.push_back(charaui);
+
 	//playerATB
 	std::shared_ptr<ATBPlayer>atbPlayer;
 	atbPlayer = std::make_shared<ATBPlayer>();
